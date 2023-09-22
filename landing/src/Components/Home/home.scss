@@ -4,6 +4,7 @@
     --gradientColor: linear-gradient(to right, hsl(187, 85%,43%), hsl(199,100%,33%));
     --whiteColor: hsl(0,0%,100%);
     --blackColor: hsl(201,33%, 16%);
+    --textColor:hsl(240,4%, 36%);
     --whiteColorDeam: hsl(0,0%,93%);
     --greyText: rgb(190,190,190);
     --InputColor: rgb(239,239,239);
@@ -64,6 +65,88 @@
             .homeTitle{
                 position:relative;
                 font-size: 1.8rem;
+            }
+        }
+        .cardDiv{
+            position: relative;
+            padding: 2rem 1rem;
+            background: var(--whiteColor);
+            border-radius: 10px;
+            gap: 1rem;
+
+            label{
+                display: block;
+                color: var(--textColor);
+                padding-bottom: 10px;
+                font-size: 13px;
+                font-weight: 500;
+            }
+
+            .label_total{
+                justify-content: space-between;
+                align-items: center;
+
+                .total{
+                    color: var(--textColor);
+                    font-size: 18px;
+                    padding-bottom: 10px;
+                }
+            }
+
+            .input{
+                height: 40px;
+                padding: 0 1rem;
+                background: var(--InputColor);
+                border-radius: 3rem;
+
+                input{
+                    background: none;
+                    border: none;
+                    outline: none;
+                    width: 100%;
+                    font-size: 13px;
+                    font-weight: 500;
+                    &::placeholder{
+                        font-size: 13px;
+                    }
+                }
+
+                icon{
+                    font-size: 18px;
+                    color: var(--PrimaryColor)
+                    !important;
+                    margin-left:10px;
+                }
+
+                .input[type=range]{
+                    background: blue;
+                }
+            }
+
+            .searchOptions{
+                position:absolute;
+                background: var(--gradientColor);
+                width: max-content;
+                bottom: -0.7rem;
+                column-gap: .8rem;
+                padding: 5px 1rem;
+                border-radius: 3rem;
+                left: 50%;
+                transform: translate(-50%);
+                justify-content: center;
+                cursor: pointer;
+
+                &:hover{
+                    background: var(--PrimaryColor);
+                }
+
+                .icon{
+                    font-size: 18px;
+                }
+
+                span{
+                    font-size: 13px;
+                }
             }
         }
     
