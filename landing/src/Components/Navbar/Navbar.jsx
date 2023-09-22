@@ -12,6 +12,11 @@ export const Navbar = () => {
     setActive('navbar activeNavbar')
   }
 
+  // function to close navbar.
+  const removeNavbar =()=>{
+    setActive('navbar')
+  }
+
   return (
     <section className="navbarSection">
       <header className='header flex'>
@@ -55,7 +60,7 @@ export const Navbar = () => {
               <a href="#">BOOK NOW</a>
             </button>
 
-            <div className="closeNavbar">
+            <div onClick={removeNavbar} className="closeNavbar">
               <AiFillCloseCircle className="icon"/>
             </div>
 
