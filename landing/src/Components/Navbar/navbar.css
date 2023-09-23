@@ -9,6 +9,8 @@
     --InputColor: rgb(239,239,239);
     --bodyColor: rgb(240,240,246);
     --cardBG: rgb(255,255,255);
+    --textColor:hsl(240,4%, 36%);
+
 }
 
 .header{
@@ -104,4 +106,55 @@
         }
     }
 
+}
+
+/* media queries */
+@media screen and (min-width: 769px){
+    .toggleNavbar,.closeNavbar{
+        display: none;
+    }
+
+    .header{
+        padding: 1.5rem 2rem;
+
+        .navbar{
+            .navLists{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: row;
+
+                .navItem{
+                    .navLink{
+                        color: var(--textColor);
+                        padding: 0 0.45rem;
+                        font-size: 0.9rem;
+                        font-weight: 500;
+
+                        &:hover{
+                            color: var(--PrimaryColor);
+                        }
+                    }
+                }
+
+                .btn{
+                    margin-left: 1rem;
+                    font-weight: 500;
+                }
+            }
+
+        }
+    }
+}
+
+@media screen and (min-width: 960px){
+    .header{
+        .navbar{
+            .navLists{
+                .navItem{
+                    padding: 0 0.7rem;
+                }
+            }
+        }
+    }
 }

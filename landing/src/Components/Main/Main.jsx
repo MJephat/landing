@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import './main.scss'
 import {HiOutlineLocationMarker} from 'react-icons/hi'
 import {TbClipboardCheck} from 'react-icons/tb'
@@ -12,7 +12,8 @@ import img7 from '../Assets/image7.png'
 import img8 from '../Assets/image8.png'
 import img9 from '../Assets/image9.png'
 
-
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 // an array of data
 
@@ -102,11 +103,19 @@ const Data = [
 ];
 
 export const Main = () => {
+
+    // add a scroll animation.
+    useEffect(() =>{
+      Aos.init({duration: 2000})
+  }, [])
+
+
   return (
     <section className='main container section'>
 
       <div className='secTitle'>
-        <h3 className='title'>
+        <h3 data-aos="fade-right"
+         className='title'>
           Most visited destinations 
           </h3>
       </div>
@@ -116,7 +125,9 @@ export const Main = () => {
           Data.map(({id,imgSrc,destTitle,location,grade,fees,
             description}) =>{
               return(
-                <div key={id} className='singleDestination'>
+                <div key={id} 
+                data-aos="fade-up"
+                className='singleDestination'>
                   <div className='imageDiv'>
                     <img src={imgSrc} alt=
                      {destTitle} />
