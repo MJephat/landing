@@ -145,7 +145,7 @@ export const Footer = () => {
 
              {/* group Three */}
              <div data-aos="fade-up"
-            data-aos-duration="5000"
+            data-aos-duration="4500"
              className='linkGroup'>
               <span className='groupTitle'>
                 LAST MUNITES
