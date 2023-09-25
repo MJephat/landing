@@ -46,7 +46,7 @@ export const Footer = () => {
             <div className='logoDiv'>
               <a href='#' className='logo flex'>
                 <MdOutlineTravelExplore className='icon'/>
-                Travel.
+                Quest.
               </a>
             </div>
 
