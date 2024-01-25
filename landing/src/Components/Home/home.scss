@@ -51,7 +51,7 @@
         flex-direction: column;
         align-items: stretch;
         justify-content: center;
-        margin: auto;
+        margin-left: 2%;
         color: var(--whiteColor);
         z-index: 100;
 
@@ -68,6 +68,8 @@
             }
         }
         .cardDiv{
+            width:96%;
+            margin: auto;
             position: relative;
             padding: 2rem 1rem;
             background: var(--whiteColor);

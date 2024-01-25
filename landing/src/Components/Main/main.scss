@@ -14,7 +14,9 @@
 }
 
 .main{
-    width: 100%;
+    width: 96%;
+    margin:auto;
+
 
     .secTitle{
         .title{
@@ -45,7 +47,7 @@
             height: 100%;
             display: grid;
             row-gap: 10px;
-            /* padding: 1rem; */
+            // padding: 2rem; 
             border-radius: 10px;
             align-items: center;
             background: var(--cardBG);
